@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #050e2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #fff;
+}
+body .logo{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #1eeeef;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.signin .container{
+    background: #1b2141;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.signin .container img{
+    width: 50%;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.signin .signin-form{
+    /* border: 1px solid red; */
+    height: 300px;
+    text-align: center;
+}
+
+.signin .signin-form input{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    width: 250px;
+    margin: 10px 0;
+    font-size: 0.75rem;
+    padding: 0 5px;
+}
+
+.signin .signin-form button{
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid #1eeeef;
+    padding: 8px 16px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.signin .signin-form button:hover{
+    background: #1eeeef;
+    color: #050e2d;
+}
+
+.signin .signup span{
+    font-size: 0.75rem;
+}
+.signin .signup span a{
+    color: #1eeeef;
+}
+
+
+@media(max-width: 600px){
+    .signin .container img{
+        display: none;
+    }
+    .signin .container{
+        padding-left: 20px;
+        margin: 0 10px;
+        width: 300px;
+    }
+}
