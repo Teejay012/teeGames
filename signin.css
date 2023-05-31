@@ -31,13 +31,13 @@ body .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    width: 600px;
+    height: 550px;
+    width: 900px;
     padding-right: 20px;
     border-radius: 5px;
 }
 .signin .container img{
-    width: 50%;
+    width: 60%;
     height: 100%;
     margin-right: 40px;
 }
@@ -46,6 +46,11 @@ body .logo{
     /* border: 1px solid red; */
     height: 300px;
     text-align: center;
+    width: 40%;
+}
+
+.signin .signin-form h4{
+    margin: 10px 0;
 }
 
 .signin .signin-form input{

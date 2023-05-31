@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #050e2d;
+    color: #fff;
+}
+
+i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1eeeef;
+    padding: 20px;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: #1eeeef;
+    border-radius: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+    z-index: 1000;
+    background: #1b2141;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+header .logo{
+    position: relative;
+    color: #1eeeef;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+header .search-box{
+    border: 1px solid red;
+    position: relative;
+    width: 450px;
+    height: 43px;
+}
+header .search-box input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+header .profile{
+    width: 30px;
+    height: 30px;
+    background: #1eeeef;
+}
+
+main{
+    position: relative;
+    top: 63px;
+    display: flex;
+}
+
+
+
+/* ============== LEFT SIDE BAR ================= */
+
+.left-side{
+    height: 100%;
+    width: 80px;
+    background: #1b2141;
+    border: 1px solid white;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.left-container i{
+    display: block;
+    margin: 20px 0;
+}
+.left-side .search-icon{
+    display: none;
+}
+
+
+
+/* ============ RIGHT BAR ================= ==========*/
+
+.right-bar{
+    position: relative;
+    left: 82px;
+    padding: 40px 0;
+    border: 1px solid green;
+    width: 93%;
+    /* height: 100vh; */
+    overflow: auto;
+}
+
+.right-bar .right-container .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 93%;
+}
+.right-bar .right-container .head.sticky{
+    background: #1b2141;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 80px;
+    z-index: 90;
+}
+
+
+.right-bar .right-container .head .heading{
+    font-weight: bold;
+}
+.right-bar .right-container .head .heading span{
+    color: #1eeeef;
+}
+
+.right-bar .right-container .head .ft span{
+    margin: 0 8px;
+    font-weight: bold;
+}
+.right-bar .right-container .head .ft span.active{
+    color: #1eeeef;
+}
+
+
+.right-bar .game-posts{
+    border: 1px solid yellow;
+}
+.right-bar .game-posts .game-posts-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.right-bar .game-posts .game-posts-cards .game-card{
+    width: 100px;
+    height: 100px;
+    border: 1px solid greenyellow;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+@media(max-width: 800px){
+    header .search-box{
+        width: 250px;
+        height: 43px;
+    }
+    header .logo{
+        font-size: 0.8rem;
+    }
+
+
+    .right-bar .right-container .head.sticky{
+        top: 60px;
+    }
+}
+
+@media(max-width: 600px){
+    header .search-box{
+        display: none;
+    }
+    .left-side .search-icon{
+        display: block;
+    }
+
+    /* =========== LEFT TO BOTTOM BAR ======== */
+
+    .left-side{
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+    }
+
+    .left-side .left-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .left-container i{
+        display: inline;
+        margin: 0 15px;
+    }
+
+
+    /* ========== RIGHT BAR ------------ */
+
+    .right-bar{
+        position: relative;
+        left: 0px;
+        padding: 40px 0;
+        border: 1px solid green;
+        width: 100%;
+    }
+
+    /* .right-bar .right-container .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        width: 93%;
+    } */
+
+    .right-bar .right-container .head{
+        width: 100%;
+        padding: 13px 25px;
+    }
+
+    .right-bar .right-container .head .heading{
+        font-size: 1rem;
+    }
+
+    .right-bar .right-container .head .ft span{
+        margin: 0 3px;
+        font-size: 0.7rem;
+    }
+    .right-bar .right-container .add{
+        display: none;
+    }
+}
