@@ -12,6 +12,11 @@ body{
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 i{
     /* width: 30px;
     height: 30px;
@@ -19,6 +24,7 @@ i{
     padding: 15px;
     color: #fff;
     font-size: 25px;
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar{
@@ -44,7 +50,7 @@ header{
 }
 
 
-header .logo{
+header .logo a{
     position: relative;
     color: #1eeeef;
     text-decoration: none;
@@ -193,7 +199,7 @@ main{
         width: 250px;
         height: 43px;
     }
-    header .logo{
+    header .logo a{
         font-size: 0.8rem;
     }
 
