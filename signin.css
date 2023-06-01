@@ -100,4 +100,8 @@ body .logo{
         margin: 0 10px;
         width: 300px;
     }
+
+    .signin .container .signin-form{
+        width: 100%;
+    }
 }

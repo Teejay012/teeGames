@@ -101,4 +101,8 @@ body .logo{
         margin: 0 10px;
         width: 300px;
     }
+
+    .signup .container .signup-form{
+        width: 100%;
+    }
 }
