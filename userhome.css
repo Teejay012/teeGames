@@ -13,10 +13,12 @@ body{
 }
 
 i{
-    width: 30px;
+    /* width: 30px;
     height: 30px;
-    border: 1px solid #1eeeef;
-    padding: 20px;
+    border: 1px solid #1eeeef; */
+    padding: 15px;
+    color: #fff;
+    font-size: 25px;
 }
 
 ::-webkit-scrollbar{
@@ -51,22 +53,31 @@ header .logo{
 }
 
 header .search-box{
-    border: 1px solid red;
     position: relative;
     width: 450px;
     height: 43px;
+    display: flex;
+    align-items: center;
 }
 header .search-box input{
     width: 100%;
     height: 100%;
     border-radius: 5px;
     padding: 0 15px;
+    outline: none;
+    border: none;
+}
+header .search-box i{
+    position: absolute;
+    right: 5px;
+    color: #000;
+    color: #1b2141;
+    /* bottom: 0; */
 }
 
-header .profile{
-    width: 30px;
-    height: 30px;
-    background: #1eeeef;
+header .profile i{
+    font-size: 25px;
+    color: #fff;
 }
 
 main{
@@ -83,7 +94,6 @@ main{
     height: 100%;
     width: 80px;
     background: #1b2141;
-    border: 1px solid white;
     position: fixed;
     z-index: 100;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -96,7 +106,10 @@ main{
     display: block;
     margin: 20px 0;
 }
-.left-side .search-icon{
+.left-side .bxs-search{
+    display: none;
+}
+.left-side .mobile-add{
     display: none;
 }
 
@@ -108,7 +121,6 @@ main{
     position: relative;
     left: 82px;
     padding: 40px 0;
-    border: 1px solid green;
     width: 93%;
     /* height: 100vh; */
     overflow: auto;
@@ -144,11 +156,19 @@ main{
 .right-bar .right-container .head .ft span.active{
     color: #1eeeef;
 }
-
-
-.right-bar .game-posts{
-    border: 1px solid yellow;
+.right-bar .right-container .head .add{
+    font-size: 35px;
+    font-weight: bold;
+    /* padding: 10px; */
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
 }
+
+
+/* .right-bar .game-posts{
+    border: 1px solid yellow;
+} */
 .right-bar .game-posts .game-posts-cards{
     display: flex;
     justify-content: center;
@@ -156,10 +176,10 @@ main{
     flex-wrap: wrap;
 }
 .right-bar .game-posts .game-posts-cards .game-card{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 1px solid greenyellow;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
 }
 
@@ -187,8 +207,13 @@ main{
     header .search-box{
         display: none;
     }
-    .left-side .search-icon{
+    .left-side .bxs-search{
         display: block;
+    }
+    .left-side .mobile-add{
+        display: block;
+        border: 1px solid #fff;
+        border-radius: 50%;
     }
 
     /* =========== LEFT TO BOTTOM BAR ======== */
@@ -234,6 +259,10 @@ main{
         width: 93%;
     } */
 
+    .right-bar .right-container .head.sticky{
+        top: 58px;
+    }
+
     .right-bar .right-container .head{
         width: 100%;
         padding: 13px 25px;
@@ -249,5 +278,12 @@ main{
     }
     .right-bar .right-container .add{
         display: none;
+    }
+
+
+
+
+    i{
+        padding: 3px;
     }
 }
